@@ -1,0 +1,22 @@
+.label{
+  width: 95%;
+  margin: 0 auto;
+}
+
+.input{
+  width: 95%;
+  height: 2rem;
+  margin: 0 auto;
+  border: 1px solid gray;
+}
+
+input:focus{
+  outline: none !important;
+  box-shadow: 0 0 10px var(--PrimaryColor);
+}
+
+.input-error{
+  color: red;
+  margin: 0 auto;
+  font-weight: bold;
+}

@@ -1,0 +1,84 @@
+:root {
+  --PrimaryColor :#d1b568;
+  --SecondColor : #fff;
+  --ThirdColor : #eeeeee;
+}
+
+body {
+  margin: 0;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  src: url(https://fonts.gstatic.com/s/lato/v17/S6u9w4BMUTPHh7USSwiPGQ.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: calc(1vh + 1vw);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.primary-bg{
+  background-color: var(--PrimaryColor);
+}
+
+.second-bg{
+  background-color: var(--SecondColor);
+}
+
+.third-bg{
+  background-color:  var(--ThirdColor);
+}
+
+.container{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal-small {
+  width: 80%;
+  height: 70%;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0px 0px 3px 1px black;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+}
+
+.modal-big {
+  width: 90%;
+  height: 59%;
+  margin: 0 auto;
+  z-index: 1;
+  box-shadow: 0px 0px 3px 1px black;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+}
+
+.primary-color{
+  color :   var(--PrimaryColor);
+}
+
+.second-color{
+  color :  var(--SecondColor);
+}
+
+.third-color{
+  color :  var(--ThirdColor);
+}
+
+@media (min-width: 0px) and (max-width: 750px){
+  body{
+    font-size: calc(1.4vw + 1.4vh);
+  }
+}

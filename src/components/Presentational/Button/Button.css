@@ -1,0 +1,47 @@
+button{
+  cursor: pointer;
+}
+
+button:focus {outline:0;}
+
+.button{
+  width: 7rem;
+  height: 3em;
+  align-items: center;
+  font-size: 100%;
+  font-weight: bold;
+  border: none;
+  color: white;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.button-small{
+  width: 8rem;
+  height: 2.5em;
+}
+
+button:disabled{
+  background-color: gray;
+  color: var(--SecondColor);
+  cursor: auto;
+}
+
+button.primary-bg:hover{
+  background-color : var(--SecondColor);
+  color: black;
+  border:1px solid var(--PrimaryColor);
+}
+
+
+button[disabled].primary-bg:hover {
+  background-color: gray;
+  color: var(--SecondColor);
+}
+
+button[disabled].second-bg:hover {
+  background-color: gray;
+  color: var(--SecondColor);
+}
